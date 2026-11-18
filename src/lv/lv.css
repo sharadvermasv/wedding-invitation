@@ -724,6 +724,8 @@ body { background: var(--lv-purple); color: var(--lv-lilac); font-family: var(--
   .lv-pill { padding: 3px 5px 3px 14px; gap: 8px; }
   .lv-pill span { font-size: 11px; }
   .lv-pill b { font-size: 10.5px; padding: 5px 10px; }
+  .lv-hn-a, .lv-hn-b { font-size: clamp(38px, 11vw, 54px); letter-spacing: 0.05em; }
+  .lv-hn-w { font-size: 13px; letter-spacing: 0.35em; text-indent: 0.35em; margin: 4px 0; }
   .lv-music { width: 34px; height: 34px; }
   .lv-bless { --tent: 128vw; }
   .lv-couple-cards { gap: 14px; padding: 0 4px; }
