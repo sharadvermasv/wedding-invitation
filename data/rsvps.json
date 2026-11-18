@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Smt. Anita Sharma & Family",
+    "phone": "+91 98390 12345",
+    "status": "attending",
+    "guestCount": 5,
+    "ceremonies": [
+      "tail",
+      "vivah"
+    ],
+    "needRoom": true,
+    "food": "pure_veg",
+    "message": "So excited for the auspicious wedding in Kashi! Congratulations!",
+    "id": "rsvp_1794201643411_po9nb",
+    "createdAt": "2026-11-09T05:20:43.411Z"
+  },
+  {
+    "id": "rsvp_1794199901001_demo1",
+    "createdAt": "2026-11-08T18:30:00.000Z",
+    "name": "Rajesh Kumar Verma & Family",
+    "phone": "+91 98765 43210",
+    "status": "attending",
+    "guestCount": 4,
+    "ceremonies": [
+      "tail",
+      "matri",
+      "vivah",
+      "vidai"
+    ],
+    "needRoom": true,
+    "food": "pure_veg",
+    "message": "Heartiest congratulations to dearest Shubham and Preeti! May God bless you both with endless joy and togetherness."
+  },
+  {
+    "id": "rsvp_1794199901002_demo2",
+    "createdAt": "2026-11-08T19:15:00.000Z",
+    "name": "Anand Mohan Singh & Pratibha",
+    "phone": "+91 94152 77890",
+    "status": "attending",
+    "guestCount": 2,
+    "ceremonies": [
+      "vivah"
+    ],
+    "needRoom": false,
+    "food": "pure_veg",
+    "message": "Very excited to join the Baraat and sacred Vivah ceremony in Kashi! Congratulations to the Verma family."
+  }
+]

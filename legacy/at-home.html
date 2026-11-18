@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shubham &amp; Preeti · At-Home</title>
+<meta name="description" content="You are warmly invited to the post-wedding At-Home and Reception Dinner of Shubham Verma and Preeti Kumari — Saturday, 5 December 2026, Hotel Maya Shyam, Hariharganj, Fatehpur.">
+<meta property="og:title" content="Shubham & Preeti · At-Home Reception">
+<meta property="og:description" content="Saturday, 5 December 2026 · 6:00 PM onwards · Hotel Maya Shyam, Hariharganj, Fatehpur">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F8F3EA;
+    --card:#FFFDF8;
+    --ink:#2B2320;
+    --muted:#7A6C62;
+    --accent:#7A2630;      /* sindoor maroon */
+    --accent-soft:#F3E4E0;
+    --gold:#B08A4F;
+    --line:#E4D8C4;
+    --serif:"Cormorant Garamond", Georgia, serif;
+    --sans:"Jost", system-ui, sans-serif;
+    --deva:"Tiro Devanagari Hindi", serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  body.locked{overflow:hidden}
+  img,svg{display:block}
+  a{color:inherit}
+
+  /* ---------- shared ---------- */
+  .eyebrow{
+    font-family:var(--sans);font-weight:400;font-size:.72rem;
+    letter-spacing:.32em;text-transform:uppercase;color:var(--gold);
+  }
+  .deva{font-family:var(--deva);color:var(--accent)}
+  .serif{font-family:var(--serif)}
+  .rule{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:28px auto}
+  .rule::before,.rule::after{content:"";height:1px;width:64px;background:currentColor;opacity:.6}
+  .rule span{width:6px;height:6px;transform:rotate(45deg);border:1px solid currentColor}
+  section{padding:96px 16px;position:relative}
+  .wrap{max-width:760px;margin:0 auto;text-align:center}
+  h2{
+    font-family:var(--serif);font-weight:400;font-style:italic;
+    font-size:clamp(2.2rem,6vw,3.2rem);line-height:1.1;color:var(--accent);
+    margin-top:14px;
+  }
+  p.lead{font-family:var(--serif);font-size:clamp(1.15rem,2.6vw,1.35rem);line-height:1.65;color:var(--ink);font-weight:400}
+
+  /* card frame: double hairline like a printed card */
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    outline:1px solid var(--line);outline-offset:-10px;
+    padding:clamp(36px,7vw,72px) clamp(22px,6vw,64px);
+    position:relative;
+    box-shadow:0 30px 60px -40px rgba(60,35,20,.35);
+  }
+  .card .corner{position:absolute;width:22px;height:22px;color:var(--gold)}
+  .card .corner.tl{top:16px;left:16px}
+  .card .corner.tr{top:16px;right:16px;transform:scaleX(-1)}
+  .card .corner.bl{bottom:16px;left:16px;transform:scaleY(-1)}
+  .card .corner.br{bottom:16px;right:16px;transform:scale(-1)}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- envelope intro ---------- */
+  #intro{
+    position:fixed;inset:0;z-index:50;background:var(--paper);
+    display:grid;place-items:center;padding:16px;
+    transition:opacity .9s ease, visibility .9s;
+  }
+  #intro.gone{opacity:0;visibility:hidden}
+  .envelope{
+    width:min(440px,100%);aspect-ratio:3/4;position:relative;
+    background:var(--card);border:1px solid var(--line);
+    box-shadow:0 40px 80px -40px rgba(60,35,20,.45);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:40px 28px;overflow:hidden;
+  }
+  .envelope::before{ /* flap */
+    content:"";position:absolute;left:0;right:0;top:0;height:42%;
+    background:linear-gradient(to bottom right,transparent 49.6%,var(--line) 50%,transparent 50.4%) left/50% 100% no-repeat,
+               linear-gradient(to bottom left,transparent 49.6%,var(--line) 50%,transparent 50.4%) right/50% 100% no-repeat;
+  }
+  .seal{
+    width:88px;height:88px;border-radius:50%;background:var(--accent);color:#F6E7D3;
+    display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:1.7rem;
+    box-shadow:inset 0 0 0 4px rgba(255,255,255,.12),0 8px 18px -8px rgba(122,38,48,.7);
+    margin:6px 0 26px;position:relative;z-index:1;
+  }
+  .envelope .to{font-family:var(--serif);font-size:1.25rem;color:var(--muted);font-style:italic;min-height:1.6em}
+  .envelope h1{font-family:var(--serif);font-weight:400;font-size:2.4rem;line-height:1.1;margin:10px 0 6px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;cursor:pointer;
+    font-family:var(--sans);font-size:.74rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;
+    padding:14px 26px;border:1px solid var(--accent);color:var(--accent);background:transparent;
+    text-decoration:none;transition:background .3s,color .3s;
+  }
+  .btn:hover,.btn:focus-visible{background:var(--accent);color:var(--card)}
+  .btn.solid{background:var(--accent);color:var(--card)}
+  .btn.solid:hover{background:#5f1c25}
+  .envelope .btn{margin-top:30px}
+
+  /* ---------- hero ---------- */
+  .toran{position:absolute;top:0;left:0;width:100%;height:110px;color:var(--gold);pointer-events:none}
+  #home{
+    min-height:100svh;display:flex;align-items:center;justify-content:center;
+    padding-top:140px;padding-bottom:80px;
+  }
+  .hero .kalash{width:54px;margin:0 auto 18px;color:var(--gold)}
+  .hero .shloka-top{font-size:1.05rem;margin-bottom:28px}
+  .hero .names{
+    font-family:var(--serif);font-weight:400;line-height:.95;
+    font-size:clamp(3.6rem,13vw,7.5rem);color:var(--ink);
+  }
+  .hero .names em{display:block;font-size:.42em;color:var(--gold);margin:.25em 0;font-style:italic}
+  .hero .date{
+    display:inline-flex;gap:18px;align-items:center;margin-top:34px;
+    font-family:var(--sans);letter-spacing:.24em;text-transform:uppercase;font-size:.8rem;font-weight:400;
+  }
+  .hero .date b{font-family:var(--serif);font-weight:500;font-size:2.4rem;letter-spacing:0;color:var(--accent)}
+  .hero .date i{width:1px;height:40px;background:var(--gold);opacity:.6}
+  .hero .place{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--muted)}
+  .scroll-cue{margin-top:56px;display:inline-block;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+  .scroll-cue::after{content:"";display:block;width:1px;height:42px;background:var(--gold);margin:12px auto 0;animation:cue 2.2s ease-in-out infinite}
+  @keyframes cue{0%,100%{transform:scaleY(.4);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+  /* ---------- blessing ---------- */
+  #blessing{background:var(--card);border-block:1px solid var(--line)}
+  .shloka{font-family:var(--deva);color:var(--accent);font-size:clamp(1.05rem,2.6vw,1.3rem);line-height:2}
+  .translit{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.1rem;margin-top:14px}
+  .meaning{margin-top:22px;max-width:560px;margin-inline:auto;color:var(--ink)}
+
+  /* ---------- invitation / couple ---------- */
+  .couple{display:grid;grid-template-columns:1fr auto 1fr;gap:28px;align-items:start;margin-top:48px}
+  .person h3{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,5vw,2.6rem);line-height:1.1;margin:10px 0 14px;color:var(--ink)}
+  .person p{font-size:.95rem;color:var(--muted)}
+  .person p strong{font-weight:400;color:var(--ink);white-space:nowrap}
+  .weds{align-self:center;font-family:var(--serif);font-style:italic;color:var(--gold);font-size:1.6rem;display:flex;flex-direction:column;align-items:center;gap:10px}
+  .weds::before,.weds::after{content:"";width:1px;height:46px;background:var(--gold);opacity:.6}
+  .closing{margin-top:44px}
+
+  /* ---------- events ---------- */
+  .events{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px;text-align:center}
+  .event{background:var(--card);border:1px solid var(--line);padding:40px 24px}
+  .event .ico{width:40px;height:40px;margin:0 auto 16px;color:var(--accent)}
+  .event h3{font-family:var(--serif);font-weight:500;font-size:1.9rem;line-height:1.1}
+  .event .sub{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.05rem}
+  .event dl{margin-top:20px;display:grid;gap:6px}
+  .event dt{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:10px}
+  .event dd{font-family:var(--serif);font-size:1.2rem}
+
+  .countdown{display:flex;justify-content:center;gap:clamp(16px,5vw,48px);margin-top:56px}
+  .countdown div{min-width:64px}
+  .countdown b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,8vw,3.6rem);line-height:1;color:var(--accent)}
+  .countdown span{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+
+  /* ---------- venue ---------- */
+  #venue{background:var(--accent);color:#F6E7D3}
+  #venue .eyebrow{color:#D9B98A}
+  #venue h2{color:#FFF6EA}
+  .venue-name{font-family:var(--serif);font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin-top:8px}
+  #venue p.addr{font-family:var(--serif);font-style:italic;font-size:1.25rem;opacity:.85}
+  #venue .actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px}
+  #venue .btn{border-color:#E9CFA6;color:#FFF6EA}
+  #venue .btn:hover,#venue .btn:focus-visible{background:#FFF6EA;color:var(--accent)}
+  .house{width:120px;margin:0 auto 22px;color:#D9B98A}
+
+  /* ---------- hosts ---------- */
+  .hosts{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+  .hosts ul{list-style:none;font-family:var(--serif);font-size:1.25rem;line-height:1.9}
+  .hosts small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--muted)}
+
+  /* ---------- footer ---------- */
+  footer{padding:80px 16px 60px;text-align:center;border-top:1px solid var(--line)}
+  footer .from{font-family:var(--serif);font-size:1.9rem;margin-top:10px}
+  footer address{font-style:normal;color:var(--muted);margin-top:6px}
+  footer .phones{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  footer .phones a{text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:2px;font-family:var(--serif);font-size:1.2rem}
+  footer .sign{margin-top:46px;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+
+  /* ---------- nav ---------- */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:center;gap:28px;
+    padding:14px 16px;background:rgba(248,243,234,.88);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);transform:translateY(-100%);transition:transform .5s ease;
+  }
+  nav.show{transform:none}
+  nav a{text-decoration:none;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+  nav a:hover{color:var(--accent)}
+  nav .mono{font-family:var(--serif);font-style:italic;font-size:1.15rem;letter-spacing:0;text-transform:none;color:var(--accent);margin-right:auto}
+  nav .links{display:flex;gap:24px;align-items:center}
+
+  @media (max-width:680px){
+    section{padding:72px 16px}
+    .couple{grid-template-columns:1fr;gap:18px}
+    .weds{flex-direction:row}
+    .weds::before,.weds::after{width:46px;height:1px}
+    .events,.hosts{grid-template-columns:1fr}
+    nav .links{display:none}
+    nav{justify-content:center}
+    nav .mono{margin:0}
+    .hero .date{gap:12px;font-size:.7rem;letter-spacing:.18em}
+    .hero .date b{font-size:2rem}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body class="locked">
+
+<!-- corner ornament -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="corner" viewBox="0 0 22 22"><path d="M1 21V7a6 6 0 0 1 6-6h14" fill="none" stroke="currentColor"/><path d="M5 21V10a5 5 0 0 1 5-5h11" fill="none" stroke="currentColor" opacity=".5"/><rect x="0" y="0" width="3" height="3" transform="rotate(45 1.5 1.5)" fill="currentColor"/></symbol>
+  <symbol id="kalash" viewBox="0 0 64 84"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="32" cy="16" rx="8" ry="10"/><path d="M28 7c2-3 6-3 8 0"/><path d="M24 30c-6-2-12-6-15-12 6 0 12 4 15 12zM40 30c6-2 12-6 15-12-6 0-12 4-15 12zM27 30c-3-6-3-12 0-16M37 30c3-6 3-12 0-16"/><path d="M18 30h28M20 34h24"/><path d="M22 34c0 3-3 4-3 6-8 4-11 11-11 18 0 12 11 18 24 18s24-6 24-18c0-7-3-14-11-18 0-2-3-3-3-6"/><path d="M12 52h40M11 60h42" opacity=".6"/><circle cx="32" cy="56" r="3"/><path d="M24 82h16"/></g></symbol>
+</svg>
+
+<!-- ===== Envelope intro ===== -->
+<div id="intro" role="dialog" aria-label="Invitation envelope">
+  <div class="envelope">
+    <p class="eyebrow" style="position:relative;z-index:1">You are invited</p>
+    <div class="seal" style="margin-top:22px">S&amp;P</div>
+    <p class="to" id="introTo">With love, for you</p>
+    <h1>Shubham &amp; Preeti</h1>
+    <p class="eyebrow" style="color:var(--muted)">At-Home · 05.12.2026</p>
+    <button class="btn solid" id="openBtn">Open Invitation</button>
+  </div>
+</div>
+
+<nav id="nav" aria-label="Sections">
+  <a class="mono" href="#home">S &amp; P</a>
+  <div class="links">
+    <a href="#invitation">Invitation</a>
+    <a href="#programme">Programme</a>
+    <a href="#venue">Venue</a>
+    <a href="#family">Family</a>
+  </div>
+</nav>
+
+<main>
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero">
+    <svg class="toran" id="toran" aria-hidden="true"></svg>
+    <div class="wrap">
+      <svg class="kalash reveal" aria-hidden="true"><use href="#kalash"/></svg>
+      <p class="deva shloka-top reveal">॥ श्री गणेशाय नमः ॥</p>
+      <p class="eyebrow reveal">Post-Wedding At-Home &amp; Reception</p>
+      <h1 class="names reveal" style="margin-top:22px">Shubham<em>&amp;</em>Preeti</h1>
+      <div class="date reveal">
+        <span>Saturday</span><i></i><b>05</b><i></i><span>Dec 2026</span>
+      </div>
+      <p class="place reveal">Hotel Maya Shyam · Hariharganj, Fatehpur</p>
+      <a href="#blessing" class="scroll-cue reveal">Scroll</a>
+    </div>
+  </section>
+
+  <!-- ===== Blessing ===== -->
+  <section id="blessing">
+    <div class="wrap">
+      <p class="eyebrow reveal">An Invocation</p>
+      <div class="rule reveal"><span></span></div>
+      <p class="shloka reveal">मंगलम् भगवान विष्णुः मंगलम् गरुड़ध्वजः ।<br>मंगलम् पुण्डरीकाक्षः मंगलाय तनो हरिः ॥</p>
+      <p class="translit reveal">Mangalam Bhagavān Viṣhṇuḥ, Mangalam Garuḍadhvajaḥ,<br>Mangalam Puṇḍarīkākṣhaḥ, Mangalāya Tano Hariḥ</p>
+      <p class="meaning reveal">Auspicious is Lord Vishnu, auspicious is he whose banner bears Garuda, auspicious is the lotus-eyed one — Lord Hari is the very abode of all that is auspicious.</p>
+    </div>
+  </section>
+
+  <!-- ===== Invitation ===== -->
+  <section id="invitation">
+    <div class="wrap">
+      <div class="card reveal">
+        <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+        <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+
+        <p class="deva" style="font-size:1.05rem;line-height:1.9">विघ्न हरण मंगल करण, श्री गणनायक महाराज ।<br>प्रथम निमंत्रण आपको, सकल सुधारो काज ॥</p>
+        <p class="translit" style="font-size:1rem">O Lord Ganesha, remover of obstacles and bringer of all things auspicious —<br>our very first invitation is to you; bless every endeavour with success.</p>
+
+        <div class="rule"><span></span></div>
+
+        <p class="eyebrow" id="guestLine">Dear Family &amp; Friends</p>
+        <p class="lead" style="margin-top:14px">By the boundless grace of the Almighty,<br>we joyfully invite you to celebrate the union of</p>
+
+        <div class="couple">
+          <div class="person">
+            <p class="eyebrow">The Groom</p>
+            <h3>Shubham Verma</h3>
+            <p>Grandson of <strong>Late Shri Jagdev Prasad</strong> &amp; <strong>Smt. Budhrani</strong></p>
+            <p>Son of <strong>Late Shri Purushottam Lal</strong> &amp; <strong>Smt. Sunita Verma</strong></p>
+            <p>Saket Nagar Colony, Hariharganj, Fatehpur</p>
+          </div>
+          <div class="weds">with</div>
+          <div class="person">
+            <p class="eyebrow">The Bride</p>
+            <h3>Preeti Kumari</h3>
+            <p>Daughter of <strong>Late Shri Arvind Kumar</strong> &amp; <strong>Smt. Jayanti Devi</strong></p>
+            <p>Resident of Bihiya, Bihar</p>
+          </div>
+        </div>
+
+        <div class="closing">
+          <p class="eyebrow">on the joyous occasion of their</p>
+          <h2 style="margin-top:8px">Post-Wedding At-Home</h2>
+          <p class="lead" style="margin-top:22px">Kindly grace this sweet occasion with your affectionate presence and shower the newlyweds with your blessings. Your gracious arrival would be our great good fortune.</p>
+          <p class="translit" style="margin-top:18px">Our family eagerly awaits your arrival…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Programme ===== -->
+  <section id="programme" style="padding-top:40px">
+    <div class="wrap">
+      <p class="eyebrow reveal">Auspicious Programme</p>
+      <h2 class="reveal">The Celebration</h2>
+      <div class="events">
+        <div class="event reveal">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 19 20 7l14 12"/><path d="M10 16v17h20V16"/><path d="M17 33v-8h6v8"/><circle cx="20" cy="17" r="2"/></g></svg>
+          <h3>At-Home</h3>
+          <p class="sub">Welcoming the newlyweds</p>
+          <dl>
+            <dt>Date</dt><dd>Saturday, 5 December 2026</dd>
+            <dt>Time</dt><dd>6:00 PM onwards</dd>
+          </dl>
+        </div>
+        <div class="event reveal">
+          <svg class="ico" viewBox="0 0 40 40" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.2"><ellipse cx="20" cy="24" rx="13" ry="5"/><path d="M7 24c0-7 6-12 13-12s13 5 13 12"/><path d="M20 12V8M17 8h6"/><path d="M5 30h30"/></g></svg>
+          <h3>Reception Dinner</h3>
+          <p class="sub">Preetibhoj — a feast of love</p>
+          <dl>
+            <dt>Date</dt><dd>Saturday, 5 December 2026</dd>
+            <dt>Time</dt><dd>From 6:00 PM until your arrival</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="countdown reveal" id="countdown" aria-live="polite">
+        <div><b data-u="d">00</b><span>Days</span></div>
+        <div><b data-u="h">00</b><span>Hours</span></div>
+        <div><b data-u="m">00</b><span>Minutes</span></div>
+        <div><b data-u="s">00</b><span>Seconds</span></div>
+      </div>
+      <div class="reveal" style="margin-top:36px">
+        <button class="btn" id="calBtn">Add to Calendar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Venue ===== -->
+  <section id="venue">
+    <div class="wrap">
+      <svg class="house reveal" viewBox="0 0 120 50" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 22 30 6l26 16M64 22 90 6l26 16"/><path d="M10 19v27h40V19M70 19v27h40V19"/><path d="M22 46V32a8 8 0 0 1 16 0v14M82 46V32a8 8 0 0 1 16 0v14"/><path d="M2 46h116"/></g></svg>
+      <p class="eyebrow reveal">The Venue</p>
+      <p class="venue-name reveal">Hotel Maya Shyam</p>
+      <p class="addr reveal">Hariharganj, Fatehpur, Uttar Pradesh</p>
+      <div class="actions reveal">
+        <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Maya+Shyam+Hariharganj+Fatehpur">Get Directions</a>
+        <a class="btn" href="tel:+918130545740">Call the Family</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Hosts ===== -->
+  <section id="family">
+    <div class="wrap">
+      <p class="eyebrow reveal">With Warm Regards</p>
+      <h2 class="reveal">Awaiting Your Presence</h2>
+      <div class="hosts">
+        <div class="reveal">
+          <p class="eyebrow" style="color:var(--muted)">Eager to Welcome You</p>
+          <div class="rule"><span></span></div>
+          <ul>
+            <li>Smt. Sunita Verma</li>
+            <li>Sharad Verma <span style="color:var(--muted);font-style:italic">(son)</span></li>
+            <li>&amp; the entire Verma Family</li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow" style="color:var(--muted)">With Humble Regards</p>
+          <div class="rule"><span></span></div>
+          <ul>
+            <li>Jai Singh</li>
+            <li>Kamlesh Singh</li>
+            <li>Ramkeshan Singh</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <svg style="width:40px;margin:0 auto 14px;color:var(--gold)" aria-hidden="true" viewBox="0 0 64 84"><use href="#kalash"/></svg>
+  <p class="eyebrow">Sent with love by</p>
+  <p class="from">Sunita Verma</p>
+  <address>Nappi ka Hata, Saket Nagar Colony<br>Hariharganj, Fatehpur</address>
+  <div class="phones">
+    <a href="tel:+918130545740">+91 81305 45740</a>
+    <a href="tel:+917355753734">+91 73557 53734</a>
+  </div>
+  <p class="sign">Shubham &amp; Preeti · 05 · 12 · 2026</p>
+</footer>
+
+<script>
+  /* ---- Guest personalisation: add ?to=Name to the link ---- */
+  const guest = new URLSearchParams(location.search).get('to');
+  if (guest) {
+    const clean = guest.slice(0, 60);
+    document.getElementById('introTo').textContent = 'For ' + clean;
+    document.getElementById('guestLine').textContent = 'Dear ' + clean;
+  }
+
+  /* ---- Envelope ---- */
+  const intro = document.getElementById('intro');
+  document.getElementById('openBtn').addEventListener('click', () => {
+    intro.classList.add('gone');
+    document.body.classList.remove('locked');
+  });
+
+  /* ---- Toran (marigold garland) ---- */
+  (function drawToran(){
+    const svg = document.getElementById('toran');
+    const W = 1200, swags = window.innerWidth < 680 ? 5 : 9, sw = W / swags;
+    svg.setAttribute('viewBox', `0 0 ${W} 110`);
+    svg.setAttribute('preserveAspectRatio', 'none');
+    let g = `<line x1="0" y1="6" x2="${W}" y2="6" stroke="currentColor" stroke-width="1" opacity=".5"/>`;
+    for (let i = 0; i < swags; i++) {
+      const x0 = i * sw, x1 = x0 + sw, mid = x0 + sw / 2;
+      g += `<path d="M${x0} 6 Q${mid} 62 ${x1} 6" fill="none" stroke="currentColor" stroke-width="1"/>`;
+      for (let t = 0.1; t < 0.95; t += 0.1) {           // marigold beads along curve
+        const x = (1-t)*(1-t)*x0 + 2*(1-t)*t*mid + t*t*x1;
+        const y = (1-t)*(1-t)*6 + 2*(1-t)*t*62 + t*t*6;
+        g += `<circle cx="${x}" cy="${y}" r="${t>0.4&&t<0.6?4:2.6}" fill="${t>0.4&&t<0.6?'#C9783A':'currentColor'}" opacity="${t>0.4&&t<0.6?.85:.7}"/>`;
+      }
+      g += `<line x1="${x1}" y1="6" x2="${x1}" y2="70" stroke="currentColor" stroke-width="1" opacity=".6"/>
+            <circle cx="${x1}" cy="74" r="3.2" fill="#C9783A" opacity=".85"/>
+            <path d="M${x1} 80 q6 9 0 22 q-6 -13 0 -22z" fill="none" stroke="currentColor" stroke-width="1"/>`;
+    }
+    svg.innerHTML = g;
+  })();
+
+  /* ---- Reveal on scroll ---- */
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ---- Sticky nav after hero ---- */
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('show', scrollY > innerHeight * .7), { passive:true });
+
+  /* ---- Countdown to 5 Dec 2026, 6:00 PM IST ---- */
+  const target = new Date('2026-12-05T18:00:00+05:30').getTime();
+  const cd = document.getElementById('countdown');
+  const pad = n => String(n).padStart(2, '0');
+  function tick(){
+    let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
+    if (s === 0) { cd.innerHTML = '<p class="lead">The celebration has begun — thank you for your blessings.</p>'; return; }
+    const v = { d: Math.floor(s/86400), h: Math.floor(s%86400/3600), m: Math.floor(s%3600/60), s: s%60 };
+    for (const k in v) cd.querySelector(`[data-u="${k}"]`).textContent = pad(v[k]);
+    setTimeout(tick, 1000);
+  }
+  tick();
+
+  /* ---- Add to calendar (.ics) ---- */
+  document.getElementById('calBtn').addEventListener('click', () => {
+    const ics = [
+      'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Shubham-Preeti//At-Home//EN','BEGIN:VEVENT',
+      'UID:shubham-preeti-athome-20261205@invite',
+      'DTSTAMP:20261101T000000Z',
+      'DTSTART:20261205T123000Z','DTEND:20261205T163000Z',
+      'SUMMARY:Shubham & Preeti — At-Home & Reception Dinner',
+      'LOCATION:Hotel Maya Shyam\\, Hariharganj\\, Fatehpur',
+      'DESCRIPTION:Post-wedding At-Home and Preetibhoj (Reception Dinner)\\, 6:00 PM onwards.',
+      'END:VEVENT','END:VCALENDAR'
+    ].join('\r\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([ics], { type:'text/calendar' }));
+    a.download = 'Shubham-Preeti-At-Home.ics';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+</script>
+</body>
+</html>
